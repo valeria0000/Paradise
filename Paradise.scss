@@ -1,0 +1,435 @@
+$top-color: #691818;
+$white-color: #FFFCE9;
+$text-color: #363046;
+$font-family: 'Arial';
+
+.nav
+{
+    width: 100.15%;
+    background: $top-color;
+    display: flex;
+    position: absolute;
+    height: 66px;
+    left: -2px;
+    top: -2px;
+    .container{
+        width: 1000px;
+        height: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            font-size: 18px;
+        }
+    }
+}
+.navbar{
+    display: flex;
+    flex-flow: row nowrap;
+    &-menu{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        
+        li{
+            display: inline-block;
+            position: relative;
+            a{
+            display: inline-block;
+            font-family: $font-family;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 38px;
+            align-items: center;
+            color: $white-color;
+            text-decoration: none;
+            padding: 14px;
+            margin: auto;
+            }
+        }
+        li:hover > ul{
+            display: inline-block;
+        }
+        ul{
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: $top-color;
+            li{
+                display: block;
+                a{
+                    font-family: $font-family;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 38px;
+            align-items: center;
+            color: $white-color;
+            text-decoration: none;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin: auto;
+                }
+            }
+            li:hover{
+                background-color:#4d0f0f;
+            }
+        }
+    }
+}
+.paradise1{
+    width: 140px;
+}
+body{
+    background: url(фотки/fon.jpg);
+   
+}
+.roww{
+    width: 432px;
+    height: 72;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.paradise2{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    color: $text-color;
+    font-size: 70px;
+
+text-shadow: 4px 0 4px $white-color,
+0 4px 4px $white-color,
+-4px 0 4px $white-color,
+0 -4px 4px $white-color;
+}
+.box{
+    width: 1200px;
+        height: 100%;
+        margin-top: 220px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding: auto;
+    background: $white-color;
+    background-blend-mode: lighten;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.text{
+    display: inline-block;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    padding: 40px;
+    color: $text-color;
+    font-size: 19px;
+}
+.box2{
+    width: 228px;
+    height: 307px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 25px;
+    display: block;
+    position: relative;
+    background: $top-color;
+    padding-top: 16px;
+    float: left;
+}
+%img{
+    display: flex;
+    margin: auto;
+    width: 196px;
+        height: 245px;
+        background-size: auto 100%;
+}
+img{
+    width: 331px;
+    height: 416px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.img1{
+    background-image: url(фотки/shoes5.jpg);
+    @extend %img;
+}
+.img2{
+    background-image: url(фотки/bag3.jpg);
+    @extend %img;
+}
+.img3{
+    background-image: url(фотки/shoe3.jpg);
+    @extend %img;
+}
+.img4{
+    background-image: url(фотки/bag4.jpg);
+    @extend %img;
+}
+.price{
+    display: block;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    margin-left: 16px;
+    margin-bottom: auto;
+    color: $white-color;
+    font-size: 22px;
+        margin-top: 7px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.row2{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    justify-content: center;
+    a{
+    text-decoration: none;
+}
+}
+.row3{
+    margin-left: auto;
+    margin-right: auto;
+}
+.thing{
+font-family: $font-family;
+font-style: normal;
+font-weight: 400;
+line-height: 36px;
+color: $text-color;
+text-align: center;
+float: left;
+width: 331px;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 32px;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    max-width: 1050px;
+}
+.footer{
+    background: $white-color;
+    padding: 90px 0;
+}
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col{
+    width: 190px;
+    padding: 10px;
+    padding-left: 30px;
+    h2 a{
+        font-family: $font-family;
+        font-size: 18px;
+        color: $text-color;
+        margin-bottom: 25px;
+        font-weight: 400;
+        position: relative;
+        text-decoration: none;
+        display: block;
+    }
+    ul{
+        list-style: none;
+        
+        li a{
+            font-family: $font-family;
+            font-size: 15px;
+            text-decoration: none;
+            color: $text-color;
+            display: block;
+            transition: .3s ease;
+            &:hover{
+                color: $top-color;
+                padding-left: 6px;
+            }
+        }
+    }
+
+}
+.paradise3{
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    color: $text-color;
+    padding-right: 50px;
+    font-size: 32px;
+        padding: 50px;
+}
+.fon{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99998;
+    background-color: rgba(0, 0, 0, .3);
+    overflow-y: auto;
+}
+.modal-content{
+    width: 900px;
+    padding: 40px;
+    z-index: 1;
+    background-color: $white-color;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 170px;
+}
+h1{
+    text-align: center;
+    font-family: $font-family;
+    color: $text-color;
+}
+TEXT{
+    display: inline-block;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 20px;
+    color: $text-color;
+    text-align: justify; 
+}
+button{
+    background-color: $top-color;
+    border: 0;
+}
+
+
+@media (max-width: 700px) {
+    .nav{
+        width: 100.35%;
+        .container{
+            width: 450px;
+            a{
+                font-size: 15px;
+            }
+        }
+    }
+    .box{
+        width: 350px;
+        height: 1150px;
+        margin-top: 185px;
+    }
+    .box2{
+        width: 150px;
+        height: 190px;
+        margin-left: 3px;
+        margin-right: 3px;
+        margin-bottom: 6px;
+    }
+    %img{
+        width: 120px;
+        height: 142px;
+        background-size: 120px 142px;
+    }
+    img{
+        width: 110px;
+        height: 150px;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    .thing{
+        width: 110px;
+        font-size: 17px;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    .price{ 
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    .paradise1{
+        width: 100px;
+        margin-left: 20px;
+    }
+    .paradise2{
+        font-size: 45px;
+    }
+    .paradise3{
+        font-size: 20px;
+        padding: 20px;
+    }
+    .footer-col{
+        width: 100px;
+    }
+    .modal-content{
+        width: 400px;
+    }
+    
+}
+@media (min-width: 700px) and (max-width: 1000px){
+    .nav{
+        width: 100.15%;
+        .container{
+            width: 700px;
+        }
+    }
+    .box{
+        width: 630px;
+        height: 1400px;
+    }
+    .box2{
+        width: 190px;
+        height: 250px;
+    }
+    %img{
+        width: 158px;
+        height: 188px;
+        background-size: 158px 188px;
+    }
+    img{
+        width: 175px;
+        height: 216px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    body{
+        height: 1700px;
+    }
+    .thing{
+        width: 175px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    .container{
+        max-width: 550px;
+    }
+    .footer-col{
+        width: 130px;
+    }
+    .modal-content{
+        width: 700px;
+    }
+}

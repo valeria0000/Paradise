@@ -1,0 +1,267 @@
+@charset "UTF-8";
+.nav {
+  width: 100.15%;
+  background: #691818;
+  display: flex;
+  position: absolute;
+  height: 66px;
+  left: -2px;
+  top: -2px;
+}
+.nav .container {
+  width: 1000px;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .container a {
+  font-size: 18px;
+}
+
+.navbar {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.navbar-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar-menu li {
+  display: inline-block;
+  position: relative;
+}
+.navbar-menu li a {
+  display: inline-block;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  align-items: center;
+  color: #FFFCE9;
+  text-decoration: none;
+  padding: 14px;
+  margin: auto;
+}
+.navbar-menu li:hover > ul {
+  display: inline-block;
+}
+.navbar-menu ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #691818;
+}
+.navbar-menu ul li {
+  display: block;
+}
+.navbar-menu ul li a {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 38px;
+  align-items: center;
+  color: #FFFCE9;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: auto;
+}
+.navbar-menu ul li:hover {
+  background-color: #4d0f0f;
+}
+
+.paradise1 {
+  font-family: "Abhaya Libre";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  color: #FFFCE9;
+  padding: 40px;
+}
+
+body {
+  background: url(фотки/fon.jpg);
+}
+
+.box {
+  width: 1200px;
+  height: 100%;
+  margin-top: 220px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding: auto;
+  background: #FFFCE9;
+  background-blend-mode: lighten;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  color: #363046;
+}
+
+.text {
+  display: inline-block;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  padding: 40px;
+  color: #363046;
+}
+
+.box2 {
+  width: 228px;
+  height: 307px;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 25px;
+  display: block;
+  position: relative;
+  background: #691818;
+  padding-top: 16px;
+  float: left;
+}
+
+.price {
+  display: block;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  margin-left: 16px;
+  margin-bottom: auto;
+  color: #FFFCE9;
+  font-size: 22px;
+  margin-top: 7px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1050px;
+  margin: auto;
+}
+
+.footer {
+  background: #FFFCE9;
+  padding: 120px 0;
+}
+
+.row-footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 20%;
+  padding: 10px;
+  padding-left: 40px;
+}
+.footer-col h2 a {
+  font-family: "Arial";
+  font-size: 18px;
+  color: #363046;
+  margin-bottom: 25px;
+  font-weight: 400;
+  position: relative;
+  text-decoration: none;
+  display: block;
+}
+.footer-col ul {
+  list-style: none;
+}
+.footer-col ul li a {
+  font-family: "Arial";
+  font-size: 15px;
+  text-decoration: none;
+  color: #363046;
+  display: block;
+  transition: 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #691818;
+  padding-left: 6px;
+}
+
+.paradise3 {
+  font-family: "Abhaya Libre";
+  font-style: normal;
+  font-size: 32px;
+  color: #363046;
+  padding-right: 50px;
+}
+
+.fon {
+  display: flex;
+}
+
+button {
+  background-color: #691818;
+  border: 0;
+}
+
+@media (max-width: 700px) {
+  .nav .container {
+    width: 150px;
+  }
+  .nav .container a {
+    font-size: 15px;
+  }
+  .box {
+    width: 350px;
+    height: 1150px;
+    margin-top: 185px;
+  }
+  .box2 {
+    width: 150px;
+    height: 190px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 6px;
+  }
+  .price {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  .paradise2 {
+    font-size: 45px;
+  }
+  .paradise3 {
+    font-size: 20px;
+    padding: 20px;
+  }
+  .footer-col {
+    width: 100px;
+  }
+  .modal-content {
+    width: 400px;
+  }
+}/*# sourceMappingURL=Paradise2.css.map */
